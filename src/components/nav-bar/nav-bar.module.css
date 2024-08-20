@@ -39,6 +39,7 @@
     padding: 16px;
     width: 100%;
     background-color: transparent;
+    overflow: hidden;
 }
 
 .button:hover {
@@ -58,4 +59,20 @@
     width: 100%;
     text-align: center;
     font-size: 15px;
+}
+
+/* Ocultar texto en pantallas pequeñas */
+@media (max-width: 768px) {
+    .button {
+        justify-content: center; /* Centrar el icono */
+        padding: 16px;
+    }
+
+    .button::after {
+        content: none;
+    }
+
+    .button > span {
+        display: none; /* Ocultar el texto */
+    }
 }

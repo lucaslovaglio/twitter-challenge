@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./button.module.css";
 
 interface ButtonProps {
-    text: string;
+    text?: string;
     icon?: React.ReactNode;
     onClick: () => void;
     disabled?: boolean;

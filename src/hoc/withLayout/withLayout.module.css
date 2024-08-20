@@ -12,6 +12,7 @@
     flex-grow: 1;
     height: 100vh;
     padding-left: 1rem;
+    min-width: 60px;
 }
 
 .leftBarContent {
@@ -48,6 +49,14 @@
     max-width: 600px;
     height: 100%;
     background-color: #FFFFFF;
+}
+
+
+@media (max-width: 768px) {
+    .rightBar {
+        display: none;
+    }
+
 }
 
 /*!* Media queries para pantallas pequeñas *!*/
