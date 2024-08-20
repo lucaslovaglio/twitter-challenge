@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    color: #566370;
+    padding-left: 56px;
+    gap: 24px;
+}
+
+.actionButton {
+    border: none;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.liked {
+    color: #e0245e; /* Color para like activo */
+}
+
+.retweeted {
+    color: #1da1f2; /* Color para retweet activo */
+}

@@ -1,0 +1,55 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    max-width: 300px;
+    /*width: 100%;*/
+    position: relative;
+    padding: 16px;
+
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    /*padding: 16px;*/
+    width: 100%;
+    gap: 16px;
+
+}
+
+
+.iconTwitter {
+    height: 30px;
+    width: 30px;
+}
+
+.button {
+    border: none;
+    display: flex;
+    align-items: center;
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    padding: 16px;
+    width: 100%;
+    background-color: transparent;
+}
+
+/*.button > i {*/
+/*    margin-right: 10px;*/
+/*}*/
+
+.tweetButton {
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 30px;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}

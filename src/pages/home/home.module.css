@@ -1,0 +1,131 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.leftBar {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    /*padding: 20px;*/
+    overflow: hidden; /* Para hacer scroll dentro de la sidebar si es necesario */
+    flex-grow: 1;
+    height: 100vh;
+    padding-left: 1rem;
+}
+
+.leftBarContent {
+    display: flex;
+    width: 100%;
+    top: 20px;
+    position: relative;
+    justify-content: flex-end;
+    /*padding: 20px;*/
+}
+
+
+
+
+.rightBar {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    /*padding: 20px;*/
+    overflow: auto; /* Para hacer scroll dentro de la sidebar si es necesario */
+    flex-grow: 1;
+    height: 100vh;
+}
+.rightBarContent {
+    position: relative;
+    margin: 16px;
+    background-color: #ff0000;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+/*!* Media queries para pantallas pequeñas *!*/
+/*@media (max-width: 768px) {*/
+/*    .wrapper {*/
+/*        flex-direction: column;*/
+/*        width: 100%;*/
+/*        height: 100vh;*/
+/*        overflow: hidden;*/
+/*    }*/
+
+/*    .leftBar {*/
+/*        width: 100%;*/
+/*        height: 48px;*/
+/*        background-color: #ff0000;*/
+/*        order: 2; !* Aparece después del feed *!*/
+/*    }*/
+
+/*    .rightBar {*/
+/*        display: none; !* Oculta la barra derecha en pantallas pequeñas *!*/
+/*    }*/
+
+/*    .feed {*/
+/*        display: flex;*/
+/*        width: 100%;*/
+/*        height: auto;*/
+/*        order: 1; !* Aparece antes de la barra izquierda *!*/
+/*        flex-grow: 1;*/
+/*    }*/
+
+/*    !* Estilo del menú de navegación en la parte inferior *!*/
+/*    .leftBarMobile {*/
+/*        display: flex;*/
+/*        flex-direction: row;*/
+/*        justify-content: space-around;*/
+/*        width: 100%;*/
+/*        background-color: #ff0000;*/
+/*        padding: 10px;*/
+/*    }*/
+/*}*/
+
+/*!* Media queries para pantallas pequeñas *!*/
+/*@media (max-width: 768px) {*/
+/*    .wrapper {*/
+/*        flex-direction: column;*/
+/*        width: 100%;*/
+/*        height: 100vh;*/
+/*        overflow: hidden;*/
+/*    }*/
+
+/*    .leftBar {*/
+/*        width: 100%;*/
+/*        height: 48px;*/
+/*        background-color: #ff0000;*/
+/*        order: 2; !* Aparece después del feed *!*/
+/*    }*/
+
+/*    .rightBar {*/
+/*        display: none; !* Oculta la barra derecha en pantallas pequeñas *!*/
+/*    }*/
+
+/*    .feed {*/
+/*        display: flex;*/
+/*        width: 100%;*/
+/*        height: auto;*/
+/*        background-color: #21ff00;*/
+/*        order: 1; !* Aparece antes de la barra izquierda *!*/
+/*        flex-grow: 1;*/
+/*    }*/
+
+/*    !* Estilo del menú de navegación en la parte inferior *!*/
+/*    .leftBarMobile {*/
+/*        display: flex;*/
+/*        flex-direction: row;*/
+/*        justify-content: space-around;*/
+/*        width: 100%;*/
+/*        background-color: #ff0000;*/
+/*        padding: 10px;*/
+/*    }*/
+/*}*/

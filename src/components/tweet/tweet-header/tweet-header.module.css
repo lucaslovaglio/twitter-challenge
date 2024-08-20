@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.profilePicture {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #536471;
+    gap: 8px;
+}
+
+.authorName {
+    font-weight: bold;
+    font-size: 15px;
+    color: #0f1419;
+}
+
+.username {
+    color: #566370;
+}
+
+.dot {
+    color: #566370;
+}
+
+.date {
+    color: #566370;
+}
