@@ -1,0 +1,57 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    gap: 16px;
+}
+
+.inputBar {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    /*padding: 16px;*/
+    /*border-radius: 16px;*/
+    /*gap: 16px;*/
+    /*background-color: #F0F3F4;*/
+}
+
+.searchInput {
+    width: 100%;
+    position: relative;
+    border: none;
+    padding: 16px;
+    border-radius: 16px;
+    gap: 16px;
+    background-color: #F0F3F4;
+}
+
+.searchInput:focus {
+    border: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 16px;
+    gap: 16px;
+    background-color: #F0F3F4;
+
+}
+
+.header {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 19.8px;
+    letter-spacing: 0.0015em;
+    text-align: left;
+
+}
+
+.actions {
+    color: #4A99E9;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+}

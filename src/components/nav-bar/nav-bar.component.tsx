@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faSearch, faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
 import styles from "./nav-bar.module.css"; // Archivo CSS para la sidebar
 import { ReactComponent as TwitterLogo } from "../common/icons/twitter-logo.svg";
+import Texts from "./constants/texts.constant"; // Importa el archivo de textos
 
 const Sidebar = () => {
     return (
@@ -15,31 +16,31 @@ const Sidebar = () => {
                 <div className={styles.buttons}>
                     <Button
                         icon={<FontAwesomeIcon icon={faHome} />}
-                        text="Home"
+                        text={Texts.HOME}
                         onClick={() => console.log("Home")}
                         className={styles.button}
                     />
                     <Button
                         icon={<FontAwesomeIcon icon={faSearch} />}
-                        text="Explore"
+                        text={Texts.EXPLORE}
                         onClick={() => console.log("Explore")}
                         className={styles.button}
                     />
                     <Button
                         icon={<FontAwesomeIcon icon={faEnvelope} />}
-                        text="Message"
+                        text={Texts.MESSAGE}
                         onClick={() => console.log("Message")}
                         className={styles.button}
                     />
                     <Button
                         icon={<FontAwesomeIcon icon={faUser} />}
-                        text="Profile"
+                        text={Texts.PROFILE}
                         onClick={() => console.log("Profile")}
                         className={styles.button}
                     />
                 </div>
                 <Button
-                    text="Tweet"
+                    text={Texts.TWEET}
                     onClick={() => console.log("Tweet")}
                     className={styles.tweetButton} // Clase específica para el botón Tweet
                 />
