@@ -7,9 +7,17 @@
 }
 
 .actionButton {
+    display: flex;
     border: none;
     background-color: transparent;
     transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.actionIcon {
+    height: 16px;
+    fill: #566370;
 }
 
 .liked {

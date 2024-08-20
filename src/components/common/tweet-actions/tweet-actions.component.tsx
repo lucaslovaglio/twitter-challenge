@@ -1,13 +1,14 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faHeart, faMessage, faRetweet} from '@fortawesome/free-solid-svg-icons';
 import styles from './tweet-actions.module.css';
 import {useEffect, useState} from "react";
 import {FeedService} from "../../../services/feed/feed.service";
 import {Tweet} from "../../../interfaces/tweet.interface";
-import {FeedServiceMock} from "../../../services/feed/feed.service.mock";
 import {ReactionType} from "../../../enums/reaction-type.enum";
-import LikeButton from "../like-button/like-button.component";
 import {FeedServiceHttp} from "../../../services/feed/feed.service.http";
+import { ReactComponent as LikeIcon } from "../icons/like-icon.svg";
+import { ReactComponent as LikeIconPressed } from "../icons/like-icon.pressed.svg";
+import { ReactComponent as RetweetIcon } from "../icons/retweet-icon.svg";
+import { ReactComponent as RetweetIconPressed } from "../icons/retweet-icon.pressed.svg";
+import { ReactComponent as CommentIcon } from "../icons/comment-icon.svg";
 
 interface TweetActionsProps {
     tweet: Tweet;
@@ -35,7 +36,7 @@ const TweetActions: React.FC<TweetActionsProps> = ({ tweet }) => {
 
 
     const handleLike = async () => {
-        const feedService = new FeedServiceHttp();
+        const feedService: FeedService = new FeedServiceHttp();
         const isLiking = !userLikes;
 
         setLikes(likes + (isLiking ? 1 : -1));
@@ -67,16 +68,24 @@ const TweetActions: React.FC<TweetActionsProps> = ({ tweet }) => {
             {/*<LikeButton/>*/}
             <button className={styles.actionButton} onClick={() => {
             }}>
-                <FontAwesomeIcon icon={faMessage} className={styles.actionIcon}/>
+                <CommentIcon className={styles.actionIcon}/>
             </button>
             <span>{tweet.comments.length}</span>
-            <button className={`${styles.actionButton} ${userLikes ? styles.liked : ''}`} onClick={handleLike}>
-                <FontAwesomeIcon icon={faHeart} className={styles.actionIcon}/>
+            <button className={styles.actionButton} onClick={handleLike}>
+                {!userLikes ? (
+                    <LikeIcon className={styles.actionIcon}/>
+                ) : (
+                    <LikeIconPressed className={styles.actionIcon}/>
+                )}
             </button>
             <span>{likes}</span>
-            <button className={`${styles.actionButton} ${userRetweets ? styles.retweeted : ''}`}
+            <button className={styles.actionButton}
                     onClick={handleRetweet}>
-                <FontAwesomeIcon icon={faRetweet} className={styles.actionIcon}/>
+                {!userRetweets ? (
+                    <RetweetIcon className={styles.actionIcon}/>
+                ) : (
+                    <RetweetIconPressed className={styles.actionIcon}/>
+                )}
             </button>
             <span>{retweets}</span>
         </div>
