@@ -54,4 +54,9 @@
     background-color: transparent;
     font-size: 15px;
     cursor: pointer;
+    font-weight: lighter;
+}
+
+.actions:hover {
+    background-color: transparent;
 }

@@ -26,6 +26,7 @@
 }
 
 .button {
+    color: black;
     border: none;
     display: flex;
     align-items: center;
@@ -38,6 +39,11 @@
     padding: 16px;
     width: 100%;
     background-color: transparent;
+}
+
+.button:hover {
+    background-color: #E7E7E8;
+    border-radius: 30px;
 }
 
 /*.button > i {*/

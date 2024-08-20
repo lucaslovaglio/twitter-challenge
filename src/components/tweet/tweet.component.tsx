@@ -1,9 +1,9 @@
 import {Tweet} from "../../interfaces/tweet.interface";
 import styles from './tweet.module.css';
-import TweetHeader from "./tweet-header/tweet-header.component";
-import TweetContent from "./tweet-content/tweet-content.component";
-import TweetActions from "./tweet-actions/tweet-actions.component";
-import TweetImage from "./tweet-image/tweet-image.component";
+import TweetHeader from "../common/tweet-header/tweet-header.component";
+import TweetContent from "../common/tweet-content/tweet-content.component";
+import TweetActions from "../common/tweet-actions/tweet-actions.component";
+import TweetImage from "../common/tweet-image/tweet-image.component";
 
 interface TweetProps {
     tweet: Tweet;

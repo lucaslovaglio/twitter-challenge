@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 16px;
+    /*margin: 16px;*/
+    gap: 16px;
+    position: relative;
+    border: 1px solid #F0F3F4;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.date {
+    font-size: 15px;
+    color: #566370;
+}

@@ -6,7 +6,7 @@ import {FeedService} from "../../../services/feed/feed.service";
 import {Tweet} from "../../../interfaces/tweet.interface";
 import {FeedServiceMock} from "../../../services/feed/feed.service.mock";
 import {ReactionType} from "../../../enums/reaction-type.enum";
-import LikeButton from "../../common/like-button/like-button.component";
+import LikeButton from "../like-button/like-button.component";
 import {FeedServiceHttp} from "../../../services/feed/feed.service.http";
 
 interface TweetActionsProps {
