@@ -21,9 +21,9 @@
 }
 
 .liked {
-    color: #e0245e; /* Color para like activo */
+    color: #e0245e;
 }
 
 .retweeted {
-    color: #1da1f2; /* Color para retweet activo */
+    color: #1da1f2;
 }

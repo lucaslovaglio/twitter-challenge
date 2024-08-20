@@ -17,7 +17,7 @@ const MenuButton: React.FC<ButtonProps> = ({ text, icon, onClick, disabled, clas
         const updateButtonVisibility = () => {
             if (buttonRef.current) {
                 // Check if the button is too narrow to display both icon and text
-                const isNarrow = buttonRef.current.offsetWidth < 100; // Adjust this value based on design
+                const isNarrow = buttonRef.current.offsetWidth < 100;
                 setShowText(!isNarrow);
             }
         };
