@@ -7,17 +7,17 @@ import TweetImage from "./tweet-image/tweet-image.component";
 
 interface TweetProps {
     tweet: Tweet;
+    onClick: (tweetId: string) => void;
 }
 
-const TweetComponent: React.FC<TweetProps> = ({ tweet }) => {
-    console.log('Tweet:', tweet);
+const TweetComponent: React.FC<TweetProps> = ({ tweet , onClick}) => {
     return (
-        <div className={styles.container0}>
+        <div className={styles.wrapper}>
         <div className={styles.container}>
             <div className={styles.header}>
                 <TweetHeader tweet={tweet}/>
             </div>
-            <div className={styles.content}>
+            <div className={styles.content} onClick={() => onClick(tweet.id)}>
                 <TweetContent tweet={tweet} />
             </div>
             {tweet.images?.map((image, index) => (
